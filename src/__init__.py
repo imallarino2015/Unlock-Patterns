@@ -29,7 +29,7 @@ if __name__ == "__main__":
 		print(df.shape[0])
 		for idx, row in df.iterrows():
 			visualize.createImage(
-				"pics/" + str(len(row)) + "/" +
+				"../pics/" + str(len(row)) + "/" +
 				str(row.tolist()).
 				replace("[", "").
 				replace("]", "").
