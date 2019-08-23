@@ -6,18 +6,10 @@ import calculate
 import visualize
 
 if __name__ == "__main__":
-	# visualize.createImage("../pics/test.png",[3,0,6,5,8,2,4,1,7])
-	# s=validate.formatListToCSV([0,1,2,3,4,5,6,7,8])
-	# print(s)
-	# sl=validate.formatCSVToList(s)
-	# print(sl)
-	# il=[]
-	# for item in sl:
-	# 	il.append(int(item))
-	# print(il)
+	visualize.createImage("../cover.png",[])
 
-	# generate.generatePattern("../data/data.csv")
-	# validate.validate("../data/data.csv","../data/validated.csv")
+	generate.generatePattern("../data/data.csv")
+	validate.validate("../data/data.csv","../data/validated.csv")
 	print(calculate.count("../data/validated.csv"))
 
 	df=pd.read_csv("../data/validated.csv")
